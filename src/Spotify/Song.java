@@ -72,4 +72,24 @@ public class Song {
   public boolean getLiked() {
     return liked;
   }
+  
+  /** 
+  * toString method that returns song information 
+  *
+  * @param getName() - a string that shows the name of the song
+  * @param getArtist() - a string that shows the artist of the song
+  * @param getPlaylist() - a string that shows which playlist the songs belongs
+  * @param getAlbum() - a string that shows which album the songs belongs
+  * @param getRelease() - a string that shows the release month of the song
+  */
+  public String toString() {
+    if (album.equals("NONE")) {
+      return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist();
+    }
+    if (playlist.equals("NONE")) {
+      return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the album " + getAlbum();
+    }
+    return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist() + " and it is in the album " + getAlbum();
+
+  }
 }
