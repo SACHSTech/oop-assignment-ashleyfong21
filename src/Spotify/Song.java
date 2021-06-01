@@ -84,12 +84,12 @@ public class Song {
   */
   public String toString() {
     if (album.equals("NONE")) {
-      return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist();
+      return getName() + " by " + getArtist() + " released in " + getRelease() + "and is liked: " + getLiked();
     }
-    if (playlist.equals("NONE")) {
+    /*if (playlist.equals("NONE")) {
       return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the album " + getAlbum();
-    }
-    return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the playlist " + getPlaylist() + " and it is in the album " + getAlbum();
+    }*/
+    return getName() + " by " + getArtist() + " released in " + getRelease() + ", is in the album " + getAlbum() + " and is liked: " + getLiked();
 
   }
 }
