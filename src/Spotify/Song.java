@@ -27,4 +27,49 @@ public class Song {
     release = theRelease;
     liked = isLiked; 
   }
+
+  /** 
+  * Getter method that returns the name of the song 
+  * 
+  * @return name
+  */
+  public String getName() {
+    return name;
+  }
+
+  /** 
+  * Getter method that returns the artist 
+  * 
+  * @return artist
+  */
+  public String getArtist() {
+    return artist;
+  }
+
+  /** 
+  * Getter method that returns the release month 
+  * 
+  * @return release
+  */
+  public String getRelease() {
+    return release;
+  }
+
+  /** 
+  * Getter method that returns the album 
+  * 
+  * @return album
+  */
+  public String getAlbum() {
+    return album;
+  }
+
+  /** 
+  * Getter method that returns the playlist 
+  * 
+  * @return playlist
+  */
+  public boolean getLiked() {
+    return liked;
+  }
 }
