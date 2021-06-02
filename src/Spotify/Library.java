@@ -45,11 +45,10 @@ public class Library {
   public ArrayList getLibrary() {
     return Library;
   }
-
-  /**
-  * Adds song to array library list
+/**
+  * Adds playlist to library list
   *
-  * @param newSong the name of the instance of the Song class that will be added
+  * @param newPlaylist the name of the instance of the Playlist class that will be added
   */
   public ArrayList addPlaylist(Playlist newPlaylist) {
     Library.add(newPlaylist);
@@ -57,14 +56,14 @@ public class Library {
   }
   
   /**
-  * Removes song from array library list
+  * Removes playlist from array library list
   *
-  * @param song the name of the instance of the Song class that will be removed
+  * @param playlist the name of the instance of the playlist class that will be removed
   */
   public void removePlaylist(Playlist playlist) {
 
-    for(int ii = 0; ii < Library.size(); ii++) {
-      if(Library.get(ii).equals(playlist)) {
+    for (int ii = 0; ii < Library.size(); ii++) {
+      if (Library.get(ii).equals(playlist)) {
         Library.remove(ii);
       }
     
