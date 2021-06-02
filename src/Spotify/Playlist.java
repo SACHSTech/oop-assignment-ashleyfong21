@@ -1,8 +1,9 @@
 package Spotify;
 import java.io.*;
 import java.util.ArrayList;
-import Spotify.Song;
 import Spotify.Library;
+import Spotify.Album;
+import Spotify.Playlist;
 
 public class Playlist extends Library {
 
@@ -50,9 +51,8 @@ public class Playlist extends Library {
   *
   * @param newSong the name of the instance of the Song class that will be added
   */
-  public ArrayList addPlaylist(Song newSong) {
-    Playlist.add(newSong);
-    return Playlist;
+  public ArrayList addPlaylist(Song newSong, Playlist list) {
+    return setName.add(newSong);
   }
   
   /**

@@ -1,8 +1,9 @@
 package Spotify;
-import Spotify.Song;
-import Spotify.Playlist;
-import java.util.ArrayList;
 import java.io.*;
+import java.util.ArrayList;
+import Spotify.Library;
+import Spotify.Album;
+import Spotify.Playlist;
 
 public class Library {
 

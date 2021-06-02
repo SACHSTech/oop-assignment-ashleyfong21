@@ -63,7 +63,7 @@ public class SpotifyMain {
     Playlist Throw = new Playlist("Throwbacks");
     
     // Add Songs to playlists
-    Drive.add(Maniac); 
+    Drive.addSong(Maniac); 
     Drive.addSong(Blood);
     Drive.addSong(Beamin); 
     Chill.addSong(Golden);
