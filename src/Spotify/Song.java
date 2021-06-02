@@ -83,10 +83,10 @@ public class Song {
   * @param getRelease() - a string that shows the release month of the song
   */
   public String toString() {
-    if (album.equals("NONE")) {
+    /*if (album.equals("NONE")) {
       return getName() + " by " + getArtist() + " released in " + getRelease() + "and is liked: " + getLiked();
     }
-    /*if (playlist.equals("NONE")) {
+    if (playlist.equals("NONE")) {
       return getName() + " by " + getArtist() + " released in " + getRelease() + " is in the album " + getAlbum();
     }*/
     return getName() + " by " + getArtist() + " released in " + getRelease() + ", is in the album " + getAlbum() + " and is liked: " + getLiked();
