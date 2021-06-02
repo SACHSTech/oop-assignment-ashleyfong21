@@ -12,7 +12,7 @@ public class Playlist extends Library {
   /** 
   * Playlist constructor. Creates an instance of the object for Playlist. 
   *
-  * @param setName - a string that shows the name of the song
+  * @param setName - a string that shows the name of the playlist
   */
   public Playlist(String setName) {
     super(setName);
@@ -41,8 +41,8 @@ public class Playlist extends Library {
   * 
   * @return Library array list
   */
-  public ArrayList getLibrary() {
-    return super.getLibrary();
+  public ArrayList getPlaylist() {
+    return getPlaylist();
   }
 
   /**
@@ -69,13 +69,14 @@ public class Playlist extends Library {
     
     }
   }
+  
   /** 
   * toString method that returns playlist information 
   *
-  * @param getName() - a string that shows the name of the song
+  * @param getName() - a string that shows the name of the playlist
   * @param getLibrary() - an ArrayList that shows all the songs in the playlist
   */
   public String toString() {
-    return super.getName() + " " + super.getLibrary();
+    return super.getName() + " " + getPlaylist();
   }
 }
