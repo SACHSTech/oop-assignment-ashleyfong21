@@ -57,7 +57,7 @@ public class Album extends Library {
   * @param newSong the name of the instance of the Song class that will be added
   */
   public ArrayList addSong(Song newSong) {
-    Album = Album.addSong(newSong);
+    Album.add(newSong);
     return Album;
   }
 
