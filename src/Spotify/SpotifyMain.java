@@ -15,7 +15,6 @@ public class SpotifyMain {
     int choice = 0; 
     String choice2;
     int iii = 0;
-    int iiii = 0;
 
     // logo
     System.out.println();
@@ -50,12 +49,26 @@ public class SpotifyMain {
     Song Traitor = new Song("Traitor", "Olivia Rodrigo", "Sour", "2021", true);
     Song Happier = new Song("Happier", "Olivia Rodrigo", "Sour", "2021", true);
 
-    // Create album and add songs
+    Song Taunt = new Song("Taunt", "Lovejoy", "Are You Alright?", "2021", true);
+    Song OneDay = new Song("One Day", "Lovejoy", "Are You Alright?", "2021", false);
+    Song Sells = new Song("Sex Sells", "Lovejoy", "Are You Alright?", "2021", true);
+    Song Cause = new Song("Cause for Concern", "Lovejoy", "Are You Alright?", "2021", false);
+
+    // Create albums and add songs
+    // Album: Sour
     Album Sour = new Album("Sour", "Olivia Rodrigo", 11);
 
     Sour.addSong(Brutal);
     Sour.addSong(Traitor);
     Sour.addSong(Happier);
+
+    // Album: Are You Alright? 
+    Album Alright = new Album("Are You Alright?", "Lovejoy", 4); 
+
+    Alright.addSong(Taunt);
+    Alright.addSong(OneDay); 
+    Alright.addSong(Sells);
+    Alright.addSong(Cause); 
 
     // Create Playlist    
     Playlist Drive = new Playlist("Driving");
@@ -64,60 +77,42 @@ public class SpotifyMain {
     
     // Add Songs to playlists
     Drive.addSong(Maniac); 
-    Drive.addSong(Blood);
+    Drive.addSong(Brutal);
     Drive.addSong(Beamin); 
+    Drive.addSong(OneDay); 
     Chill.addSong(Golden);
     Chill.addSong(Lie);
+    Chill.addSong(Sells); 
     Throw.addSong(Fireflies);
     Throw.addSong(Bohemian);
 
     // Start program and run like spotify
-    while (choice <= 4) {
+    if (inputUser.equals("ashley") && inputPass.equals("qwerty123")) {
 
       // if you enter the correct username and password, you can login into the spotify account
-      if (inputUser.equals("ashley") && inputPass.equals("qwerty123")) {
-
+      
+      while (choice != 4) {
         // Print main menu
         System.out.println("Main Menu");
-        System.out.println("Please choose from the following:");
+        System.out.println("Choose what you would like to do:");
         System.out.println("1 - View your library");
         System.out.println("2 - View your albums  ");
-        System.out.println("3 - View your playlists");
+        System.out.println("3 - View your liked songs");
         System.out.println("4 - Log off");
         choice = Integer.parseInt(keyboard.readLine());
 
         // Complete chosen task
         if(choice == 1) {
-          System.out.println("YOUR LIBRARY");
+          System.out.println("YOUR LIBRARY: ");
           System.out.println ("*************************************************************");
-          System.out.println(Golden);
-          /*System.out.println(Selfish);
-          System.out.println(Easy);
-          System.out.println(Lose);
-          System.out.println(Youbroke);
-          System.out.println(Stuck);
-          System.out.println(Mad);
-          System.out.println(ThisCity);
-          System.out.println(Cool);
-          System.out.println(Physical);
-          System.out.println(Hallucinate);
-          System.out.println();*/
-        } 
-        else if (choice == 2) {
-          System.out.println("ALBUM: SOUR");
-          System.out.println("*************************************************************");
-          System.out.println(Sour);
-          System.out.println();
-        } 
-        else if (choice == 3) {
-          System.out.println("Please choose a playlist from the following:");
-          System.out.println("1 - Drive");
-          System.out.println("2 - Chill");
-          System.out.println("3 - ");
+          System.out.println("Choose a playlist from the following:");
+          System.out.println("1 - Driving");
+          System.out.println("2 - Chil");
+          System.out.println("3 - Throwbacks");
           choice2 = keyboard.readLine();
 
           if (choice2.equals("1")) {
-            System.out.println("PLAYLIST: DRIVE");
+            System.out.println("PLAYLIST: DRIVING");
             System.out.println("*************************************************************");
             System.out.println(Drive);
             System.out.println();
@@ -129,7 +124,7 @@ public class SpotifyMain {
             System.out.println();
           } 
           else if (choice2.equals("3")) {
-            System.out.println("PLAYLIST: COOL STUFF");
+            System.out.println("PLAYLIST: THROWBACKS");
             System.out.println("*************************************************************");
             System.out.println(Throw);
             System.out.println();
@@ -137,25 +132,55 @@ public class SpotifyMain {
           else {
             System.out.println("Invalid Option");
           }
-        } 
+        }
+
+        else if (choice == 2) {
+          System.out.println("Choose an album to view:");
+          System.out.println("1 - Sour");
+          System.out.println("2 - Are You Alright?");
+          choice2 = keyboard.readLine();
+
+          // Print the album that is chosen 
+          if (choice2.equals("1")) {
+            System.out.println("ALBUM: SOUR");
+            System.out.println("*************************************************************");
+            System.out.println(Sour);
+            System.out.println();
+          } 
+          else if (choice2.equals("2")) {
+            System.out.println("ALBUM: ARE YOU ALRIGHT?");
+            System.out.println("*************************************************************");
+            System.out.println(Alright);
+            System.out.println();
+          }
+        }
+        else if (choice == 3) {
+          System.out.println("YOUR LIKED SONGS");
+          System.out.println(Maniac);
+          System.out.println(Golden);
+          System.out.println(Blood);
+          System.out.println(Bohemian);
+          System.out.println(Traitor);
+          System.out.println(Happier);
+          System.out.println(Taunt);
+          System.out.println(Sells);
+          System.out.println();
+        }
         else if (choice == 4) {
           System.out.println("Thank you for using spotify!");
         } 
         else {
           System.out.println("Invalid Option");
         }
-
       } 
     
-      else {
-        System.out.println("INVALID USERNAME/PASSWORD PLEASE TRY AGAIN");
-        iii = iii + 1;
-        if(iii == 5) {
-          System.out.println("YOU HAVE ATTEMPTED TO MANY TIMES. PLEASE EXIT AND TRY AGAIN LATER");
-        }
-      }
+      System.out.println("Logging off. Nice seeing you!");
+     
+    }
+
+    else {
+    System.out.println("INVALID USERNAME/PASSWORD PLEASE TRY AGAIN");
     }
     
-    System.out.println("Logging off. Nice seeing you!");
   }
 }

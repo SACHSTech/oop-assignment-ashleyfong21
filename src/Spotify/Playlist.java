@@ -38,12 +38,12 @@ public class Playlist extends Library {
   }
   
   /** 
-  * Getter method that returns the library array list 
+  * Getter method that returns the playlist array list 
   * 
-  * @return Library array list
+  * @return Playlist array list
   */
   public ArrayList getPlaylist() {
-    return getPlaylist();
+    return Playlist;
   }
 
   /**
@@ -61,7 +61,7 @@ public class Playlist extends Library {
   *
   * @param song the name of the instance of the Song class that will be removed
   */
-  public void removePlaylist(Song song) {
+  public void removeSong(Song song) {
 
     for (int i = 0; i < Playlist.size(); i++) {
       if (Playlist.get(i).equals(song)) {

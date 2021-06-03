@@ -51,15 +51,6 @@ public class Song {
   }
 
   /** 
-  * Getter method that returns the release month 
-  * 
-  * @return release
-  */
-  public String getRelease() {
-    return release;
-  }
-
-  /** 
   * Getter method that returns the album 
   * 
   * @return album
@@ -69,9 +60,18 @@ public class Song {
   }
 
   /** 
-  * Getter method that returns the playlist 
+  * Getter method that returns the release year 
   * 
-  * @return playlist
+  * @return release
+  */
+  public String getRelease() {
+    return release;
+  }
+
+  /** 
+  * Getter method that returns if it is liked or not
+  * 
+  * @return liked
   */
   public boolean getLiked() {
     return liked;
