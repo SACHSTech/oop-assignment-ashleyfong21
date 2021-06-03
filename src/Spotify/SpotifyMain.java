@@ -12,7 +12,7 @@ public class SpotifyMain {
     // variables
     String inputUser;
     String inputPass; 
-    int choice = 50004040; 
+    int choice = 0; 
     String choice2;
     int iii = 0;
     int iiii = 0;
@@ -29,7 +29,7 @@ public class SpotifyMain {
     System.out.println();
 
     // login
-    System.out.println("Please enter your username and password to access your account.");
+    System.out.println("Enter username and password to access your account.");
     System.out.print("Username: ");
     inputUser = keyboard.readLine();
     System.out.print("Password: ");
@@ -72,15 +72,10 @@ public class SpotifyMain {
     Throw.addSong(Bohemian);
 
     // Start program and run like spotify
-    while (choice != 4) {
-      if (inputUser.equals("KyleM21") && inputPass.equals("Hello123")) {
+    while (choice <= 4) {
 
-        User user1 = new User("KyleM21", "Hello123");
-        if (iiii == 1) {
-          System.out.println(user1);
-          System.out.println();
-          iiii = iiii + 1;
-        }
+      // if you enter the correct username and password, you can login into the spotify account
+      if (inputUser.equals("ashley") && inputPass.equals("qwerty123")) {
 
         // Print main menu
         System.out.println("Main Menu");
@@ -88,8 +83,7 @@ public class SpotifyMain {
         System.out.println("1 - View your library");
         System.out.println("2 - View your albums  ");
         System.out.println("3 - View your playlists");
-        System.out.println("4 - View your podcasts");
-        System.out.println("5 - Log off");
+        System.out.println("4 - Log off");
         choice = Integer.parseInt(keyboard.readLine());
 
         // Complete chosen task
@@ -110,32 +104,32 @@ public class SpotifyMain {
           System.out.println();*/
         } 
         else if (choice == 2) {
-          System.out.println("ALBUM FUTURE");
+          System.out.println("ALBUM: SOUR");
           System.out.println("*************************************************************");
           System.out.println(Sour);
           System.out.println();
         } 
         else if (choice == 3) {
           System.out.println("Please choose a playlist from the following:");
-          System.out.println("1 - New");
-          System.out.println("2 - Chilling ");
-          System.out.println("3 - Cool Stuff");
+          System.out.println("1 - Drive");
+          System.out.println("2 - Chill");
+          System.out.println("3 - ");
           choice2 = keyboard.readLine();
 
           if (choice2.equals("1")) {
-            System.out.println("PLAYLIST NEW");
+            System.out.println("PLAYLIST: DRIVE");
             System.out.println("*************************************************************");
             System.out.println(Drive);
             System.out.println();
           } 
           else if (choice2.equals("2")) {
-            System.out.println("PLAYLIST CHILLING");
+            System.out.println("PLAYLIST: CHILL");
             System.out.println("*************************************************************");
             System.out.println(Chill);
             System.out.println();
           } 
           else if (choice2.equals("3")) {
-            System.out.println("PLAYLIST COOL STUFF");
+            System.out.println("PLAYLIST: COOL STUFF");
             System.out.println("*************************************************************");
             System.out.println(Throw);
             System.out.println();

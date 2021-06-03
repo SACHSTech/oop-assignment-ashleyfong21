@@ -64,8 +64,8 @@ public class Library {
   public void removePlaylist(Playlist playlist) {
 
     for (int i = 0; i < Library.size(); i++) {
-      if (Library.get(ii).equals(playlist)) {
-        Library.remove(ii);
+      if (Library.get(i).equals(playlist)) {
+        Library.remove(i);
       }
     
     }

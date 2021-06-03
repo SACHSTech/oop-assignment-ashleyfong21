@@ -64,8 +64,8 @@ public class Playlist extends Library {
   public void removePlaylist(Song song) {
 
     for (int i = 0; i < Playlist.size(); i++) {
-      if (Playlist.get(ii).equals(song)) {
-        Playlist.remove(ii);
+      if (Playlist.get(i).equals(song)) {
+        Playlist.remove(i);
       }
     
     }
