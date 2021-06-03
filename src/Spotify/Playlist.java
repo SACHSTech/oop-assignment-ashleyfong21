@@ -51,8 +51,9 @@ public class Playlist extends Library {
   *
   * @param newSong the name of the instance of the Song class that will be added
   */
-  public ArrayList addPlaylist(Song newSong, Playlist list) {
-    return setName.add(newSong);
+  public ArrayList addSong(Song newSong) {
+    Playlist.add(newSong);
+    return Playlist;
   }
   
   /**
@@ -62,7 +63,7 @@ public class Playlist extends Library {
   */
   public void removePlaylist(Song song) {
 
-    for (int ii = 0; ii < Playlist.size(); ii++) {
+    for (int i = 0; i < Playlist.size(); i++) {
       if (Playlist.get(ii).equals(song)) {
         Playlist.remove(ii);
       }

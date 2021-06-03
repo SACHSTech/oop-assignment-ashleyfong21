@@ -63,7 +63,7 @@ public class Library {
   */
   public void removePlaylist(Playlist playlist) {
 
-    for (int ii = 0; ii < Library.size(); ii++) {
+    for (int i = 0; i < Library.size(); i++) {
       if (Library.get(ii).equals(playlist)) {
         Library.remove(ii);
       }
