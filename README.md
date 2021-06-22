@@ -4,6 +4,9 @@
 [*see instructions for details*](Instructions.md)
 
 *Insert Class Diagram here*  
+![alt text](https://raw.githubusercontent.com/SACHSTech/oop-assignment-ashleyfong21/main/OOP.png) 
 
 ## Summary
 *Include a brief summary that describes your system that your are modelling*
+
+This system models the music streaming application, Spotify. You can use the program to view your library, which consists of your playlists, your albums, and your liked songs. When looking at a songs information, it can tell you the song name, the artist it is by, the album it is on, the year it was released, and whether it is in the liked songs list. Different choices you pick will give you different results. For example, if you choose to view an album, it will list the songs that are in that album, the artist, and how many tracks there are. The user can look through the program until they choose "log off," which will prompt the logging off screen and end the program.
